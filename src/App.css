@@ -1,0 +1,72 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.heading-colour{
+    color:#243743;
+}
+.subheading{
+  color:#434343;
+}
+.description{
+  color:#545454
+}
+/* #28b78d */
+.div_background{
+   background-color:#2e739b
+}
+
+.text-head{
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.Logo{
+  height:70px;
+  width:140px;
+  position:relative;
+  top:0px;
+}
+
+.heading{
+  /* color:#38354E; */
+  padding:3rem;
+  font-size: 32px;
+  /* font-weight: bold; */
+}
+.companyname{
+  position:relative;
+  top:20px;
+}
+.white{
+  color:white;
+}
+.alignCentre{
+  text-align: center;
+}
+.highlight{
+  color:#B8A7FF;
+}
+.alignLeft{
+  text-align: left;
+}
+.alignRight{
+  text-align: right;
+}
+
+.Logo{
+  font-size:80px;
+}
+
+.botton{
+background: #28b78d;
+/* background: linear-gradient(90deg, rgb(69, 212, 167) 0%, rgb(45, 68, 98) 100%); */
+background: linear-gradient(90deg, rgb(8, 33, 66)  0%, rgb(71, 107, 157) 100%);
+color:white;
+border-radius: 12px;
+
+}
+
+.mgRight{
+   position:relative;
+   right:30px;
+}
