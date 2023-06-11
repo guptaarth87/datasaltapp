@@ -1,0 +1,30 @@
+.sectiontwo_div{
+    height:25rem;
+    background-repeat: no-repeat; 
+    position:relative;
+    /* width:100%; */
+    border-radius: 15px;
+    object-fit:cover;
+}
+
+.margin{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    margin-left:1rem;
+    align-items:center
+}
+
+.sectiontwo_text{
+     position:absolute;
+     padding:30px;
+}
+
+@media(max-width:660px){
+    .section_text{
+        font-size:20px;
+      
+    }
+    .margin{
+        margin:0rem;
+    }
+}
