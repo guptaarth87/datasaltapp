@@ -1,5 +1,6 @@
 import '../styles/Footer.css';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 function Footer(){
     return (
@@ -23,7 +24,7 @@ function Footer(){
                         <li><HashLink className="link white" to="#overview">Overview</HashLink></li>
                         <li><HashLink className="link white" to="#techstack">Tech stack</HashLink></li>
                         <li><HashLink className="link white" to="#startersection">Go to top</HashLink></li>
-
+                        <li><Link className="link white" to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="col-lg-4 col-md-6">
@@ -35,7 +36,17 @@ function Footer(){
                         
                     </ul>
                 </div>
-                
+                <div className="col-lg-4 col-md-6 ">
+                    <h5 className="mb-3 white">Contact info</h5>
+                    <ul className="list-unstyled text-muted">
+                        <li className='white'>Phone No : +91 7879069987</li>
+                        <li className='white'>Email : datasalt11@gmail.com</li>
+                        <li className='white'>Instagram : @datasaltinsta</li>
+                        
+                    </ul>
+                </div>
+               
+               
                 </div>
              </div>
             </div>

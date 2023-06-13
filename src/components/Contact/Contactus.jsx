@@ -113,8 +113,13 @@ export default function Contactus() {
             
               </div>
               </form>
-              <div className="row">
-                 .m-2
+              <div className="row m-2">
+                 <h4 className=" subheading">
+                  Contact info
+                 </h4>
+                 <h6 className='description'>Phone No : +91 7879069987</h6>
+                 <h6 className='description'>Email : datasalt11@gmail.com</h6>
+                 <h6 className='description'>Instagram : @datasaltinsta</h6>
               </div>
              
                 
