@@ -2,12 +2,23 @@ import React,{useState} from 'react'
 import './Contactus.css'
 import Img from '../../assets/authentication_vector1.svg';
 import Logo from '../../assets/Logo.png'
+import {db} from '../../_helpers/FirebaseConfig';
+import {
+  collection ,
+  getDocs,
+  addDoc , 
+  updateDoc, 
+  deleteDoc,
+  doc} from 'firebase/firestore'
+
 export default function Contactus() {
+  const usersCollectionRef =collection(db , "clientsData")
+
     const [ user , setuser] = useState({
         first_name:"",
         last_name:"",
         email:"",
-        pnoneno:""
+        phone_no:""
       });
     const handleInput = (e)=>{
         const data = e.target.value;
@@ -15,17 +26,20 @@ export default function Contactus() {
         console.log(data);
         setuser({...user,[name]:data});
      }
-     const handleSubmit=(e)=>{
+     const handleSubmit=async (e)=>{
   
         console.log("in handle block!")
         e.preventDefault();
         const data = {
-          "first_name":user.first_name,
-          "last_name":user.last_name,
-          "email":user.email,
-          "password":user.password1,
+          "First_name":user.first_name,
+          "Last_name":user.last_name,
+          "Email":user.email,
+          "Phone_no":user.phone_no
          
         }
+       await addDoc(usersCollectionRef,data);
+       window.alert("We will contact you soon!");
+       window.location.reload();
       
     }
   return (
@@ -89,12 +103,12 @@ export default function Contactus() {
                 {/* field 2 */}
                 <div className="form-group col-lg-8 col-md-10 col-sm-10">
                 <label className="card_margin" for="inputPassword">Phone no.</label>
-                   <input type="password" 
+                   <input type="phone_no" 
                    className="input_field form-control" 
-                   id="Phoneno" placeholder="Enter Phone number3" 
+                   id="phone_no" placeholder="Enter Phone number3" 
                    required
-                   value={user.phoneno}
-                   name = "password"
+                   value={user.phone_no}
+                   name = "phone_no"
                    onChange={handleInput}/>
                 </div>
                 <div className="form-group ">
