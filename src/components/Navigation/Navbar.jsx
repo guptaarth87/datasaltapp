@@ -1,5 +1,6 @@
 import React from 'react'
-import {HashLink as Link } from 'react-router-hash-link';
+import {HashLink as HLink } from 'react-router-hash-link';
+import {Link } from 'react-router-dom';
 import Logo   from '../../assets/Logo.png';
 import { useEffect , useState} from 'react';
 import '../../styles/Navbar.css';
@@ -50,10 +51,10 @@ export default function Navbar() {
      </div>:<div>
               <img  src={Logo}  className= "alignLeft Logo"/>
              
-              <Link className="nav_link link1" to='#overview'>Overview</Link>
-              <Link className="nav_link link2" to='#techstack'>Tech stack</Link>
-              <Link className="nav_link link3" to='#services'>Services</Link>              
-              <Link className="nav_link link4" to='#contactus'>Contact</Link> 
+              <HLink className="nav_link link1" to='#overview'>Overview</HLink>
+              <HLink className="nav_link link2" to='#techstack'>Tech stack</HLink>
+              <HLink className="nav_link link3" to='#services'>Services</HLink>              
+              <Link className="nav_link link4" to='/contact'>Contact</Link> 
                            
      </div>
     }

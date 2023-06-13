@@ -1,10 +1,9 @@
 import React from 'react'
-import Contactus from '../components/Contact/contactus.jsx'
+import Contactus from '../components/Contact/Contactus'
 
 export default function Contact() {
   return (
    <>
-  
    <Contactus/>
    </>
   )

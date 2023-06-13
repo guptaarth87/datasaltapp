@@ -2,6 +2,8 @@ import React from 'react'
 import { FiCode, FiMonitor, FiGlobe, FiRefreshCcw, FiLayout, FiMessageCircle } from 'react-icons/fi';
 import '../styles/Services.css';
 
+import {Link } from 'react-router-dom';
+
 export default function Services() {
     const servicesList = [
         {
@@ -48,7 +50,7 @@ export default function Services() {
                 <div className="card-icon">{service.icon}</div>
                 <h5 className="card-title subheading">{service.title}</h5>
                 <p className="card-text description">{service.description}</p>
-                <button className='btn botton'>Contact</button>
+                <Link className='btn botton' to="/contact">Contact</Link>
               </div>
             </div>
           </div>

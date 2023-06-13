@@ -30,9 +30,9 @@ export default function Contactus() {
     }
   return (
     <>
-    <div className="contactus_page">
-        <div className="container m-4">
-           <h2 className="white alignCentre">Leave your details here we will contact you</h2>
+    <div className="contactus_page"><br></br><br></br>
+        <div className="container ">
+           <h2 className="white alignCentre ">Leave your details here we will contact you</h2>
        </div>
 
      
