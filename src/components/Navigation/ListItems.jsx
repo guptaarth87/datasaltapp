@@ -1,5 +1,6 @@
 import React from 'react';
-import {HashLink as Link } from 'react-router-hash-link';
+import {HashLink as HLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import '../../styles/Navbar.css';
 
 function ListItem({ items }) {
@@ -26,8 +27,9 @@ function ListItem({ items }) {
   return (
     <ul>
       {items.map((item, index) => (
-        <li  className = "list_st" key={index}><Link className='Link_dec alignCentre' to={item.nav}>{item.name}</Link></li>
+        <li  className = "list_st" key={index}><HLink className='Link_dec alignCentre' to={item.nav}>{item.name}</HLink></li>
       ))}
+      <li  className = "list_st" ><Link className='Link_dec alignCentre' to='/contact'>Contact us</Link></li>
          </ul>
   );
 }

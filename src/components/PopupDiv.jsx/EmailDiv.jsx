@@ -1,7 +1,15 @@
 import React,{useState} from 'react'
 import BrochureDownload from './BrochureDownload';
 import './Popupdiv.css';
+import {db} from '../../_helpers/FirebaseConfig';
+import {
+  collection ,
+  addDoc , 
+ } from 'firebase/firestore'
+
 export default function EmailDiv() {
+    const usersCollectionRef =collection(db , "contactEmails")
+
     const [isOpen, setIsOpen] = useState(true);
     const [email, setEmail] = useState('');
   
@@ -13,9 +21,15 @@ export default function EmailDiv() {
       setEmail(event.target.value);
     };
   
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault();
       // Process the email submission here
+      const data = {
+        'Email':email
+      }
+      await addDoc(usersCollectionRef,data);
+      window.alert("We will contact you soon!");
+      setIsOpen(false);
       console.log(email);
     };
   
@@ -49,7 +63,7 @@ export default function EmailDiv() {
             cursor: 'pointer',
           }}
         >
-          Contact Us
+          Submit
         </button>
         <hr></hr>
         <BrochureDownload/>

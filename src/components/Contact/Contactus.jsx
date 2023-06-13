@@ -5,11 +5,8 @@ import Logo from '../../assets/Logo.png'
 import {db} from '../../_helpers/FirebaseConfig';
 import {
   collection ,
-  getDocs,
   addDoc , 
-  updateDoc, 
-  deleteDoc,
-  doc} from 'firebase/firestore'
+ } from 'firebase/firestore'
 
 export default function Contactus() {
   const usersCollectionRef =collection(db , "clientsData")
@@ -116,7 +113,9 @@ export default function Contactus() {
             
               </div>
               </form>
-              
+              <div className="row">
+                 .m-2
+              </div>
              
                 
              </div>

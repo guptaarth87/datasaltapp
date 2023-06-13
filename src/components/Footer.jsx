@@ -30,7 +30,7 @@ function Footer(){
                     <h5 className="mb-3 white">Social Media</h5>
                     <ul className="list-unstyled text-muted">
                         <li><a className="link white" href="#">Facebook</a></li>
-                        <li><a className="link white" href="#">Instagram</a></li>
+                        <li><a className="link white" href="https://www.instagram.com/datasaltinsta/?igshid=MzRlODBiNWFlZA%3D%3D"  target="_blank">Instagram</a></li>
                         <li><a className="link white" href="#">Linkedin</a></li>
                         
                     </ul>
