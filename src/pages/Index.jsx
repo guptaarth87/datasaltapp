@@ -6,7 +6,7 @@ import Mission from '../components/Mission';
 import TechStack from '../components/TechStack';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
-import EmailDiv from '../components/PopupDiv.jsx/EmailDiv';
+import EmailDiv from '../components/PopupDiv/EmailDiv';
 export default function Index() {
   return (
     <> 
