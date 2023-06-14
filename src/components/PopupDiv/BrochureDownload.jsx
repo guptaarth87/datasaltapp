@@ -4,7 +4,8 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const BrochureDownload = () => {
   const handleDownload = () => {
-    const fileUrl = 'src/components/PopupDiv.jsx/brochure.pdf';
+    const fileUrl = 'src/components/PopupDiv/brochure.pdf';
+    // const fileUrl = 'brochure.pdf';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'brochure.pdf';
