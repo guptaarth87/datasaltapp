@@ -7,6 +7,7 @@ import TechStack from '../components/TechStack';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import EmailDiv from '../components/PopupDiv/EmailDiv';
+import OurExpertise from '../components/OurExpertise';
 export default function Index() {
   return (
     <> 
@@ -16,6 +17,7 @@ export default function Index() {
        <div className="container">
 
         <Overview/>
+        <OurExpertise/>
         <Mission/>
        </div>
        <TechStack/>

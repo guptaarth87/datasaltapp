@@ -12,8 +12,8 @@ export default function Services() {
           icon: <FiCode />,
         },
         {
-          title: 'Social Media Post Creation',
-          description: 'Engaging and visually appealing social media posts for your brand.',
+          title: 'Digital Card For your Business',
+          description: 'Engaging and visually appealing Digital card for your brand. That will work like mobile app plus dashboard',
           icon: <FiMessageCircle />,
         },
         {

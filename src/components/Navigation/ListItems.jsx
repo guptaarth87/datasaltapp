@@ -5,6 +5,11 @@ import '../../styles/Navbar.css';
 
 function ListItem({ items }) {
     items = [
+      {
+        "name":"Our Expertise",
+           "nav":'#ourexpertise'
+      
+      },
         {
            "name":"Overview",
            "nav":'#overview',

@@ -50,7 +50,7 @@ export default function Navbar() {
        
      </div>:<div>
               <img  src={Logo}  className= "alignLeft Logo"/>
-             
+              <HLink className="nav_link link5" to='#ourexpertise'>Our Expertise</HLink>
               <HLink className="nav_link link1" to='#overview'>Overview</HLink>
               <HLink className="nav_link link2" to='#techstack'>Tech stack</HLink>
               <HLink className="nav_link link3" to='#services'>Services</HLink>              
